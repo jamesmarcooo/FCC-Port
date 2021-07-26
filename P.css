@@ -12,6 +12,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+/*Navigation Bar*/
 nav {
   background-color: #66422d;
   color: #fff;
@@ -26,6 +27,7 @@ nav a {
   text-decoration: none;
 }
 
+/*Header Cover*/
 header {
   height: 100vh;
   background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a009-kaboompics-004.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=80e37a5d8501ef34c306905cfd09993f-");
@@ -66,14 +68,39 @@ header p {
   margin: 0px;
 }
 
+/*Sections*/
 section {
-  padding: 20px;
+  padding: 30px;
   text-align: center;
+}
+
+/*Socials*/
+
+.social-ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-ul a {
+  color: white;
+  font-size: 35px;
+  margin: 0 10px;
+}
+
+section h2 {
+  margin: 0;
+}
+
+section p {
+  margin-top: 0;
 }
 
 .social-bg {
   background-color: #c7976f;
   color: #fff;
+  margin: 0;
 }
 
 footer {
