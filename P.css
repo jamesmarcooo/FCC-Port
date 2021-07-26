@@ -3,3 +3,30 @@
 * {
   box-sizing: border-box;
 }
+
+/*#66422D | #966045 | #B26E4B | #C7976F | #EBD2BC*/
+
+body {
+  background-color: #f0e6dd;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+nav {
+  background-color: #66422d;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+
+nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #66422d;
+  color: #fff;
+}
