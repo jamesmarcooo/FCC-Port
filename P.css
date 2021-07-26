@@ -19,16 +19,41 @@ nav {
   display: flex;
   justify-content: flex-end;
   padding: 15px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 nav a {
   color: #fff;
   margin-left: 15px;
   text-decoration: none;
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+}
+
+nav a:hover::after {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 nav p {
-  opacity: 0.5;
+  opacity: 0.1;
   margin: 0;
   margin-left: 15px;
 }
@@ -112,13 +137,18 @@ header h1::before {
   margin: 20px auto 0;
 }
 
-.project {
+.project-tile {
   margin: 10px;
   max-width: 300px;
 }
 
-.project img {
+.project-tile img {
   max-width: 100%;
+}
+
+.project-tile p {
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 /*Sections*/
