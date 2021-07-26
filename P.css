@@ -26,7 +26,48 @@ nav a {
   text-decoration: none;
 }
 
+header {
+  height: 100vh;
+  background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/a009-kaboompics-004.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=80e37a5d8501ef34c306905cfd09993f-");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center; /*Center vertically*/
+  justify-content: center; /*Center horizontally*/
+  flex-direction: column; /*Stack*/
+}
+
+header::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.4;
+}
+
+header * {
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-size: 60px;
+  margin-bottom: 8px;
+}
+
+header p {
+  font-size: 20px;
+  margin: 0px;
+}
+
 footer {
   background-color: #66422d;
   color: #fff;
+  padding: 10px;
+  text-align: center;
 }
