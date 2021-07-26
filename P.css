@@ -66,6 +66,16 @@ header p {
   margin: 0px;
 }
 
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+.social-bg {
+  background-color: #c7976f;
+  color: #fff;
+}
+
 footer {
   background-color: #66422d;
   color: #fff;
