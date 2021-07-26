@@ -23,8 +23,14 @@ nav {
 
 nav a {
   color: #fff;
-  margin-left: 20px;
+  margin-left: 15px;
   text-decoration: none;
+}
+
+nav p {
+  opacity: 0.5;
+  margin: 0;
+  margin-left: 15px;
 }
 
 /*Header Cover*/
@@ -64,8 +70,36 @@ header h1 {
 }
 
 header p {
+  position: relative;
   font-size: 20px;
   margin: 0px;
+}
+/*Header Animation*/
+header h1::before {
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+header h1:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+header h1::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: #66422d;
+  z-index: -1;
+  transition: transform 0.3s ease;
+  margin-left: -10px;
+  margin-right: -10px;
+  border-radius: 5px;
 }
 
 /*Sections*/
